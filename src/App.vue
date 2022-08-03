@@ -1,7 +1,23 @@
-<script setup></script>
-
 <template>
-  <div>123</div>
+  <main class="main">
+    <HeaderBar />
+    <Intro />
+    <About />
+    <Showcase />
+    <Contact />
+  </main>
 </template>
 
-<style scoped></style>
+<script>
+import HeaderBar from "./components/HeaderBar.vue";
+import About from "./components/About.vue";
+import Intro from "./components/Intro.vue";
+import Showcase from "./components/Showcase.vue";
+import Contact from "./components/Contact.vue";
+
+export default {
+  components: { HeaderBar, About, Intro, Showcase, Contact },
+};
+</script>
+
+<style lang="scss" scoped></style>
