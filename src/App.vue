@@ -2,9 +2,11 @@
   <main class="main">
     <HeaderBar />
     <Intro />
-    <About />
-    <Showcase />
-    <Contact />
+    <div v-scroll-spy="{ offset: 50 }">
+      <About />
+      <Showcase />
+      <Contact />
+    </div>
   </main>
 </template>
 
