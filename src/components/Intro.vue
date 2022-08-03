@@ -14,22 +14,34 @@ export default {};
 
 <style lang="scss" scoped>
 .intro {
-  height: 500px;
+  height: 60vh;
   background-image: url("../assets/intro.png");
   background-size: cover;
+  background-position: right center;
   &-content {
-    height: 500px;
+    height: 60vh;
     display: flex;
     align-items: center;
   }
   &-text {
     color: white;
-    font-size: 40px;
+    font-size: 80px;
   }
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
   .intro {
     background-image: url("../assets/intro-m.png");
+    height: 80vh;
+    &-content {
+      align-items: flex-start;
+      justify-content: center;
+      padding-top: 50px;
+      height: 80vh;
+      text-align: center;
+    }
+    &-text {
+      font-size: 40px;
+    }
   }
 }
 </style>
