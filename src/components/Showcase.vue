@@ -1,18 +1,67 @@
 <template>
   <div class="showcase">
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis,
-    assumenda dolorem? Molestias, qui. Veniam, accusantium ut aliquam doloribus
-    harum tenetur! Ipsa consectetur neque officia voluptas id asperiores ipsam
-    reiciendis blanditiis?
+    <div class="wrap">
+      <div class="showcase-select">
+        <a
+          v-for="tab in tabs"
+          :key="tab"
+          :class="{ active: currentTab === tab }"
+          @click="currentTab = tab"
+          >{{ tab }}</a
+        >
+      </div>
+      <div class="showcase-content">
+        <component :is="currentTab" />
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
-export default {};
+import CSS from "./showcases/CSS.vue";
+import Timer from "./showcases/Timer.vue";
+import Burger from "./showcases/Burger.vue";
+import Draw from "./showcases/Draw.vue";
+import FAQ from "./showcases/FAQ.vue";
+
+// 列表渲染 + 動態組件
+export default {
+  components: { CSS, Timer, Burger, Draw, FAQ },
+  data() {
+    return {
+      tabs: ["CSS", "Timer", "Burger", "Draw", "FAQ"],
+      currentTab: "CSS",
+    };
+  },
+};
 </script>
 
 <style lang="scss" scoped>
 .showcase {
-  height: 1000px;
+  background: #333;
+  padding: 30px 0;
+  &-content {
+    height: 600px;
+    background-color: #e18822;
+  }
+  &-select {
+    display: flex;
+    a {
+      cursor: pointer;
+      display: block;
+      text-decoration: none;
+      color: #e18822;
+      background-color: #ffc88a;
+      color: #fff;
+      padding: 10px 0;
+      min-width: 100px;
+      font-size: 24px;
+      text-align: center;
+      transition: background-color 0.3s ease;
+    }
+    .active {
+      background-color: #e18822;
+    }
+  }
 }
 </style>
