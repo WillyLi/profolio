@@ -23,14 +23,15 @@ import Timer from "./showcases/Timer.vue";
 import Burger from "./showcases/Burger.vue";
 import Draw from "./showcases/Draw.vue";
 import FAQ from "./showcases/FAQ.vue";
+import API from "./showcases/API.vue";
 
 // 列表渲染 + 動態組件
 export default {
-  components: { CSS, Timer, Burger, Draw, FAQ },
+  components: { CSS, Timer, Burger, Draw, FAQ, API },
   data() {
     return {
-      tabs: ["CSS", "Timer", "Burger", "Draw", "FAQ"],
-      currentTab: "CSS",
+      tabs: ["API", "CSS", "Timer", "Burger", "Draw", "FAQ"],
+      currentTab: "API",
     };
   },
 };

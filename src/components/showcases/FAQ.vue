@@ -72,6 +72,7 @@ h1 {
 }
 .faq {
   padding: 0;
+  margin: 0;
   list-style: none;
 }
 .faq-item {

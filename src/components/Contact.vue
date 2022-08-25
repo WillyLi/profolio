@@ -1,9 +1,8 @@
 <template>
-  <div>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur
-    impedit, id eius quas tempore cupiditate odio, quos, magnam perspiciatis
-    nemo illum. Adipisci accusantium ullam dolorem earum ipsa magni
-    exercitationem modi?
+  <div class="contact">
+    <div class="wrap">你好，我是呂承恩，一名前端工程師....</div>
+    <a href="#">github</a>
+    <a href="#">resume</a>
   </div>
 </template>
 
@@ -11,4 +10,8 @@
 export default {};
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.contact {
+  padding: 50px;
+}
+</style>

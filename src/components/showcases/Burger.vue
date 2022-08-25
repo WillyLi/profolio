@@ -62,7 +62,6 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
 .center {
   position: absolute;
   top: 50%;

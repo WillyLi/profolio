@@ -20,6 +20,7 @@ export default {};
   top: 0;
   width: 100%;
   background: #e18822;
+  z-index: 10;
   &-content {
     display: flex;
   }
@@ -31,6 +32,7 @@ export default {};
     height: 50px;
     line-height: 50px;
     display: block;
+    cursor: pointer;
     &.active {
       background-color: #fff;
       color: #e18822;
