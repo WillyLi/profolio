@@ -47,21 +47,39 @@ export default {
   }
   &-select {
     display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
     a {
       cursor: pointer;
       display: block;
       text-decoration: none;
       color: #e18822;
-      background-color: #ffc88a;
+      border: 1px solid #ffc88a;
       color: #fff;
-      padding: 10px 0;
       min-width: 100px;
-      font-size: 24px;
+      font-size: 18px;
       text-align: center;
       transition: background-color 0.3s ease;
+      height: 40px;
+      line-height: 38px;
+      border-radius: 20px;
+      box-sizing: border-box;
     }
     .active {
       background-color: #e18822;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .showcase {
+    &-select {
+      a {
+        height: 30px;
+        line-height: 28px;
+        border-radius: 15px;
+        min-width: 50px;
+        font-size: 12px;
+      }
     }
   }
 }

@@ -1,24 +1,22 @@
 <template>
   <main class="main">
     <HeaderBar />
-    <Intro />
     <div v-scroll-spy="{ offset: 50 }">
-      <About />
+      <Intro />
       <Showcase />
-      <Contact />
+      <Design />
     </div>
   </main>
 </template>
 
 <script>
 import HeaderBar from "./components/HeaderBar.vue";
-import About from "./components/About.vue";
 import Intro from "./components/Intro.vue";
 import Showcase from "./components/Showcase.vue";
-import Contact from "./components/Contact.vue";
+import Design from "./components/Design.vue";
 
 export default {
-  components: { HeaderBar, About, Intro, Showcase, Contact },
+  components: { HeaderBar, Intro, Showcase, Design },
 };
 </script>
 
