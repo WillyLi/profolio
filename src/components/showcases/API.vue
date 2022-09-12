@@ -1,6 +1,6 @@
 <template>
   <div id="api">
-    <swiper>
+    <swiper :navigation="true" :modules="modules">
       <swiper-slide v-for="movie in list" :key="movie.id" class="swiper">
         <div class="movie">
           <div class="movie-content">
@@ -30,8 +30,9 @@
 <script>
 import { Swiper, SwiperSlide } from "vue-awesome-swiper";
 import axios from "axios";
-
+import { Navigation } from "swiper";
 import "swiper/css";
+import "swiper/css/navigation";
 
 export default {
   components: {
@@ -41,6 +42,7 @@ export default {
   data() {
     return {
       list: [],
+      modules: [Navigation],
     };
   },
   methods: {},
@@ -96,5 +98,11 @@ export default {
     color: #ccc;
     font-size: 12px;
   }
+}
+</style>
+<style>
+.swiper-button-next,
+.swiper-button-prev {
+  color: white;
 }
 </style>
