@@ -26,3 +26,11 @@ coverage
 *.njsproj
 *.sln
 *.sw?
+
+
+.vscode
+
+# firebase
+.firebase
+.firebaserc
+firebase.json

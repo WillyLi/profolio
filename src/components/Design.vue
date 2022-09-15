@@ -36,6 +36,14 @@ import { Swiper, SwiperSlide } from "vue-awesome-swiper";
 import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation } from "swiper";
+import design1 from "@/assets/design1.jpg";
+import design2 from "@/assets/design2.jpg";
+import design3 from "@/assets/design3.jpg";
+import design4 from "@/assets/design4.jpg";
+import design5 from "@/assets/design5.jpg";
+import design6 from "@/assets/design6.jpg";
+import design7 from "@/assets/design7.jpg";
+import design8 from "@/assets/design8.jpg";
 
 export default {
   components: {
@@ -46,14 +54,14 @@ export default {
     return {
       modules: [Navigation],
       items: [
-        { url: "/src/assets/design1.jpg" },
-        { url: "/src/assets/design2.jpg" },
-        { url: "/src/assets/design3.jpg" },
-        { url: "/src/assets/design4.jpg" },
-        { url: "/src/assets/design5.jpg" },
-        { url: "/src/assets/design6.jpg" },
-        { url: "/src/assets/design7.jpg" },
-        { url: "/src/assets/design8.jpg" },
+        { url: design1 },
+        { url: design2 },
+        { url: design3 },
+        { url: design4 },
+        { url: design5 },
+        { url: design6 },
+        { url: design7 },
+        { url: design8 },
       ],
     };
   },
